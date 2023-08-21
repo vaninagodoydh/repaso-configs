@@ -9,8 +9,6 @@ spring:
       discovery:
         locator:
           enabled: true
-      default-filters:
-        - FilterCustomAtomic
       routes:
         - id: playlistRoute
           uri: lb://playlist-service/
