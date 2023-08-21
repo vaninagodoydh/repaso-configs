@@ -9,11 +9,14 @@ spring:
       discovery:
         locator:
           enabled: true
+      default-filters:
+        - FilterCustomAtomic
       routes:
         - id: playlistRoute
           uri: lb://playlist-service/
           predicates:
             - Path=/playlist/**
+
 
 
 eureka:
